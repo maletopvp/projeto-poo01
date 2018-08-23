@@ -42,7 +42,7 @@ public class JSimples extends HttpServlet {
             out.println("<body>");
             out.println("<section>");
             out.println("<header>");
-            out.println("<h1>Calculando Juros Simples</h1>");
+            out.println("<h1>Calcular Juros Simples</h1>");
             out.println("</header>");
             out.println("<article>");
             out.println("<a href='home.php'>Voltar a página inicial</a>");
