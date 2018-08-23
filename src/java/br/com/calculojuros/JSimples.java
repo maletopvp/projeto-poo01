@@ -63,7 +63,7 @@ public class JSimples extends HttpServlet {
                     String capitalComJuros = new DecimalFormat("0.00").format(capitalSemJuros * (juros/100) * quantidadeMeses);
                     String montante = new DecimalFormat("0.00").format(capitalSemJuros * (1 + (juros/100)*quantidadeMeses));
                     out.println("<h1>Resultado do Cálculo:</h1>");
-                    out.println("<p>Montante após 60 meses (simples): " + montante + " reais.</p>");
+                    out.println("<p>Montante após "+ quantidadeMeses +" meses (simples): " + montante + " reais.</p>");
                     out.println("<p>Juros da aplicação: "+ capitalComJuros +" reais.</p>");
                 }catch(Exception ex){
                     out.println("<h1>Dados encontrados inválidos</h1>");
