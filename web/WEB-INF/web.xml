@@ -4,9 +4,17 @@
         <servlet-name>NossaEquipe</servlet-name>
         <servlet-class>br.com.calculojuros.NossaEquipe</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>JSimples</servlet-name>
+        <servlet-class>br.com.calculojuros.JSimples</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NossaEquipe</servlet-name>
         <url-pattern>/home.php</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSimples</servlet-name>
+        <url-pattern>/juros-simples.php</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
