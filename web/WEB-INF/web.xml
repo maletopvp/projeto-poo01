@@ -8,6 +8,10 @@
         <servlet-name>JSimples</servlet-name>
         <servlet-class>br.com.calculojuros.JSimples</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>JComposto</servlet-name>
+        <servlet-class>br.com.calculojuros.JComposto</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NossaEquipe</servlet-name>
         <url-pattern>/home.php</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>JSimples</servlet-name>
         <url-pattern>/juros-simples.php</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>JComposto</servlet-name>
+        <url-pattern>/juros-composto.php</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
