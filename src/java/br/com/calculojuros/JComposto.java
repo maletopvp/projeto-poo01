@@ -33,7 +33,7 @@ public class JComposto extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-             out.println("<!DOCTYPE html>");
+            out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Cálculo Juros Composto</title>");            
@@ -61,13 +61,15 @@ public class JComposto extends HttpServlet {
                     double capitalSemJuros = Double.parseDouble(request.getParameter("valorSemJuros"));
                     double juros = Double.parseDouble(request.getParameter("jurosCapital"));
                     double quantidadeMeses = Double.parseDouble(request.getParameter("quantidadeMeses"));
-                    String capitalComJuros = new DecimalFormat("0.00").format(capitalSemJuros * (juros/100) * quantidadeMeses);
-                    String montante = new DecimalFormat("0.00").format(capitalSemJuros * Math.pow((1 + juros/100),quantidadeMeses));
+                    double montante = capitalSemJuros * Math.pow((1 + juros/100),quantidadeMeses);
+                    String valorInicial = new DecimalFormat("0.00").format(capitalSemJuros);
+                    
                     out.println("<hr>");
                     out.println("<h1>Resultado do Cálculo:</h1>");
                     out.println("<hr>");
-                    out.println("<p>Montante após "+ quantidadeMeses +" meses (composto): " + montante + " reais.</p>");
-                    out.println("<p>Juros da aplicação: "+ capitalComJuros +" reais.</p>");
+                    out.println("<p>Valor Inicial " + valorInicial + " reais.</p>");
+                    out.println("<p>Montante após " + quantidadeMeses + " meses (composto): " + montante + " reais.</p>");
+                    out.println("<p>Juros da aplicação: "+  String.valueOf(new DecimalFormat("0.00").format(montante -capitalSemJuros)) +" reais.</p>");
                 }catch(Exception ex){
                     out.println("<br/><h1>Dados encontrados inválidos</h1>");
                     }
