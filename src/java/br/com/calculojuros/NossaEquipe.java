@@ -46,7 +46,7 @@ public class NossaEquipe extends HttpServlet {
             out.println("<article>");
             out.println("<h1>Sobre a aplicação:</h1>");
             out.println("<p id='header'>Boa noite galera, esta é a apresentação da minha equipe e vamos disponibilizar para vocês uma aplicação com dois links, um para o cálculo de juros simples, e outro calculando juros composto.</p>");
-            out.println("<a href='juros-simples.php'>Juros Simples</a> <a href='juros-composto.php'>Juros Composto</a>");
+            out.println("<a href='juros-simples.php'>Juros Simples</a> <a href='juros-composto.php'>Juros Composto </a>");
             out.println("</article>");
             out.println("<article>");
             out.println("<h2>Esta é a nossa equipe!:</h2>");
