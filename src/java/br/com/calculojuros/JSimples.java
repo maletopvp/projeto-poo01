@@ -59,12 +59,22 @@ public class JSimples extends HttpServlet {
                 try{
                     double capitalSemJuros = Double.parseDouble(request.getParameter("valorSemJuros"));
                     double juros = Double.parseDouble(request.getParameter("jurosCapital"));
-                    double quantidadeMeses = Double.parseDouble(request.getParameter("quantidadeMeses"));
+                    int quantidadeMeses = Integer.parseInt(request.getParameter("quantidadeMeses"));
+                    String montante = new DecimalFormat("0.00").format(capitalSemJuros * (1+(juros/100)) * quantidadeMeses);
                     String capitalComJuros = new DecimalFormat("0.00").format(capitalSemJuros * (juros/100) * quantidadeMeses);
-                    String montante = new DecimalFormat("0.00").format(capitalSemJuros * (1 + (juros/100)*quantidadeMeses));
-                    out.println("<h1>Resultado do Cálculo:</h1>");
-                    out.println("<p>Montante após "+ quantidadeMeses +" meses (simples): " + montante + " reais.</p>");
-                    out.println("<p>Juros da aplicação: "+ capitalComJuros +" reais.</p>");
+                    String investimentoMes = new DecimalFormat("0.00").format((1+(juros/100))*capitalSemJuros);            
+                    String totalInvestido = new DecimalFormat("0.00").format(capitalSemJuros*quantidadeMeses);
+                    String valorJurosMensal = new DecimalFormat("0.00").format(capitalSemJuros*(juros/100));
+                    
+                    
+                    out.println("<h1>Resultado do Cálculo:</h1><hr>");
+                    out.println("<p>Dinheiro investido por mês: "+ investimentoMes +" reais.</p>");
+                    out.println("<p>Dinheiro acumulado em "+ quantidadeMeses +" meses (simples): " + montante + " reais.</p><hr>");
+                    out.println("<p>Dinheiro Investido por mês: "+ capitalSemJuros +" reais.</p>");
+                    out.println("<p>Total de Dinheiro Investido: "+ totalInvestido +" reais.</p><hr>");
+                    out.println("<p>Juros Mensal: "+ valorJurosMensal +" reais.</p>");
+                    out.println("<p>Total em Juros: "+ capitalComJuros +" reais.</p><hr>");
+                    
                 }catch(Exception ex){
                     out.println("<h1>Dados encontrados inválidos</h1>");
                 }

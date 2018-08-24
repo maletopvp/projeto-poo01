@@ -20,7 +20,7 @@
         <servlet-name>JSimples</servlet-name>
         <url-pattern>/juros-simples.php</url-pattern>
     </servlet-mapping>
-     <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>JComposto</servlet-name>
         <url-pattern>/juros-composto.php</url-pattern>
     </servlet-mapping>
@@ -30,6 +30,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>WEB-INF/web.xml</welcome-file>
+        <welcome-file>/home.php</welcome-file>
     </welcome-file-list>
 </web-app>
