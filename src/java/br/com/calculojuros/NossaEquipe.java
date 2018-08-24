@@ -55,7 +55,6 @@ public class NossaEquipe extends HttpServlet {
             out.println("<h2>Gustavo Carvalho</h2>");
             out.println("<h2>Mário Lannes</h2>");
             out.println("<h2>Rafael Marcos Sales</h2>");
-            out.println("<h2>Gustavo Carvalho</h2>");
             out.println("<h2>Thalisson Figueredo Pereira</h2>");
             out.println("</div>");
             out.println("</article>");
