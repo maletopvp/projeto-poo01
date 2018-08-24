@@ -70,7 +70,7 @@ public class JComposto extends HttpServlet {
                     out.println("<p>Montante após "+ quantidadeMeses +" meses (composto): " + montante + " reais.</p>");
                     out.println("<p>Juros da aplicação: "+ capitalComJuros +" reais.</p>");
                 }catch(Exception ex){
-                    out.println("<h1>Dados encontrados inválidos</h1>");
+                    out.println("<br/><h1>Dados encontrados inválidos</h1>");
                     }
             }
             out.println("</article>");
