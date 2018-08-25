@@ -40,6 +40,7 @@ out.println("<title>Juros Simples - Projeto POO</title>");
 out.println("<meta charset='utf-8'>");
 out.println("<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>");
 out.println("<link rel='stylesheet' href='css/style.css'>");
+out.println("<link rel='icon' type='image/png' href='img/icone.png'>");
 out.println("<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' integrity='sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B' crossorigin='anonymous'>");
 out.println("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>");
 out.println("</head>");
