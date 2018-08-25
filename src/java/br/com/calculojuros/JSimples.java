@@ -116,13 +116,12 @@ public class JSimples extends HttpServlet {
         if(request.getParameter("valorSemJuros") != null){
             try{
                 double capitalSemJuros = Double.parseDouble(request.getParameter("valorSemJuros"));
-                double juros = Double.parseDouble(request.getParameter("jurosCapital"));
+                double juros = Double.parseDouble(request.getParameter("jurosCapital")) / 100 ;
                 int quantidadeMeses = Integer.parseInt(request.getParameter("quantidadeMeses"));
-                String montante = new DecimalFormat("0.00").format(capitalSemJuros * (1+(juros/100)) * quantidadeMeses);
-                String capitalComJuros = new DecimalFormat("0.00").format(capitalSemJuros * (juros/100) * quantidadeMeses);
-                String investimentoMes = new DecimalFormat("0.00").format((1+(juros/100))*capitalSemJuros);            
-                String totalInvestido = new DecimalFormat("0.00").format(capitalSemJuros*quantidadeMeses);
-                String valorJurosMensal = new DecimalFormat("0.00").format(capitalSemJuros*(juros/100));
+                String montante = new DecimalFormat("0.00").format(capitalSemJuros + (capitalSemJuros * quantidadeMeses)*juros);
+                String capitalComJuros = new DecimalFormat("0.00").format(capitalSemJuros * (juros) * quantidadeMeses);
+                String totalInvestido = new DecimalFormat("0.00").format(capitalSemJuros);
+                String valorJurosMensal = new DecimalFormat("0.00").format(capitalSemJuros*(juros));
 
                 out.println("<div class='col-lg-6'>");
                 out.println("<div class='card card-verde'>");
@@ -130,15 +129,9 @@ public class JSimples extends HttpServlet {
                 out.println("<h3 class='card-title font-weight-bold pb-2'>Resultados</h3>");
                 out.println("<div class='p-2'>");
                 out.println("<p>");
-                out.println("<span class='font-weight-bold text-success'>Dinheiro acumulado (mês): </span>R$ " + investimentoMes);
-                out.println("</p>");
-                out.println("<p>");
                 out.println("<span class='font-weight-bold text-success'>Dinheiro acumulado em "+ quantidadeMeses +" meses: </span>R$ " + montante);
                 out.println("</p>");
                 out.println("<hr>");
-                out.println("<p>");
-                out.println("<span class='font-weight-bold text-success'>Dinheiro investido por mês: </span>R$ " + capitalSemJuros);
-                out.println("</p>");
                 out.println("<p>");
                 out.println("<span class='font-weight-bold text-success'>Total de dinheiro investido: </span>R$ " + totalInvestido);
                 out.println("</p>");
