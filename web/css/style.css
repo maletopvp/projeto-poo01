@@ -1,0 +1,62 @@
+.card-azul {
+    border-top-color: blue!important;
+    border-top-width: 4px !important;
+}
+.card-verde {
+    border-top-color:green!important;
+    border-top-width: 4px !important;
+}
+
+.card-vermelho {
+    border-top-color: #bd0707!important;
+    border-top-width: 4px !important;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: url(../img/header.jpg) no-repeat fixed !important;
+    background-size: cover!important
+}
+
+.juros-simples{
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: url(../img/header-simples.jpg) no-repeat fixed !important;
+    background-size: cover!important
+}
+
+.juros-composto{
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: url(../img/background-sobre.jpg) no-repeat fixed !important;
+    background-size: cover!important
+}
+
+.texto-sombra {
+    text-shadow: 2px 2px rgba(0,0,0,.3490196);
+}
+
+.espaco{
+    padding-top: 180px;
+    padding-bottom:100px 
+}
+
+.logo{
+    width: 85px;
+}
+
+.rodape-img{
+    width: 160px
+}
+
+.cor-rodape{
+    background-color: #dadada
+}
+
+.text-vermelho{
+    color: #fb6c6a
+}

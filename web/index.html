@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>Página Inicial - Projeto POO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top font-weight-bold">
+        <div class="container">
+            <div class="row">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logo-centropaulasouza-corfatec.png">
+                </a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor:pointer" data-toggle="modal" data-target="#modelId">Integrantes</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projeto POO</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="juros-simples.html">Juros Simples</a>
+                                <a class="dropdown-item" href="juros-composto.html">Juros Composto</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="espaco">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center texto-sombra text-white">
+                    <h1 class="font-weight-bold">Projeto POO</h1>
+                    <p>Trabalho de Juros Simples e Composto</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-lg-6">
+                    <div class="card card-azul">
+                        <div class="card-body">
+                            <h3 class="card-title font-weight-bold">Juros Simples</h3>
+                            <p class="card-text text-justify p-2">Juros simples é um acréscimo calculado sobre o valor inicial de um aplicação financeira ou de
+                                uma compra feita a crédito, por exemplo. O valor inicial de uma dívida, empréstimo ou investimento
+                                é chamado de capital. A esse valor é aplicada uma correção, chamada de taxa de juros, que
+                                é expressa em porcentagem.</p>
+                            <a href="juros-simples.html" class="btn btn-primary text-white font-weight-bold">Fazer Juros Simples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-azul">
+                        <div class="card-body">
+                            <h3 class="card-title font-weight-bold">Juros Composto</h3>
+                            <p class="card-text text-justify p-2">Juros compostos são a aplicação de juros sobre juros, isto é, os juros compostos são aplicados
+                                ao montante de cada período. Juros compostos são muito utilizados pelo sistema financeiro,
+                                pois oferece uma rentabilidade melhor. A taxa de juros é sempre aplicada ao somatório do
+                                capital no final de cada mês.</p>
+                            <a href="juros-composto.html" class="btn btn-primary text-white font-weight-bold">Fazer Juros Composto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="cor-rodape">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-3 text-center">
+                    <img class="rodape-img" src="img/SaoPaulo-Logo-02.png">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Modal -->
+    <div class='modal fade' id='modelId' tabindex='-1' role='dialog' aria-labelledby='modelTitleId' aria-hidden='true'>
+        <div class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h4 class='modal-title' id='modelTitleId'>Integrantes do Grupo</h4>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>
+                <div class='modal-body px-4 pb-2'>
+                    <p class='font-weight-bold'>
+                        <i class='fa fa-angle-right'></i> Diogo Átila Rodrigues de Carvalho
+                    </p>
+                    <p class='font-weight-bold'>
+                        <i class='fa fa-angle-right'></i> Gustavo Carvalho
+                    </p>
+                    <p class='font-weight-bold'> 
+                        <i class='fa fa-angle-right'></i> Rafael Marcos Sales
+                    </p>
+                    <p class='font-weight-bold'>
+                        <i class='fa fa-angle-right'></i> Mário César Lanes Júnior
+                    </p>
+                    <p class='font-weight-bold'>
+                        <i class='fa fa-angle-right'></i> Thalisson Figueredo Pereira
+                    </p>
+                    <hr>
+                    <p class='font-weight-bold text-center'>
+                        <i class='fa fa-github'></i>
+                        <a href='https://github.com/maletopvp/projeto-poo01' rel='noreffer'>https://github.com/maletopvp/projeto-poo01</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
